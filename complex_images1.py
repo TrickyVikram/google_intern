@@ -53,4 +53,3 @@ for i, img_path in enumerate(next_horse_pix+next_human_pix):
  
 plt.show()
  
- 
