@@ -24,5 +24,5 @@ for x in range(0, size_x, 2):
 plt.gray()
 plt.grid(False)
 plt.imshow(newImage)
-plt.axis('off')
+# plt.axis('off') # this line show axis line numberv and point
 plt.show()
