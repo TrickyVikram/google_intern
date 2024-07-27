@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import models
+from tensorflow.keras import models # type: ignore
 import matplotlib.pyplot as plt
 
 # Load the Fashion MNIST dataset
