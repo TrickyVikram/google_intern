@@ -16,3 +16,5 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.fit(training_images, training_labels, epochs=5)
 test_loss, test_accuracy = model.evaluate(test_images, test_labels)
 print ('Test loss: {}, Test accuracy: {}'.format(test_loss, test_accuracy*100))
+
+
