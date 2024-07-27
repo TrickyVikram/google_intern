@@ -7,15 +7,20 @@ import matplotlib.pyplot as plt
 
 i = misc.ascent()
 
-plt.grid(False)
-plt.gray()
-plt.axis('off')
-plt.imshow(i)
-plt.show()
 
 i_transformed = np.copy(i)
 size_x = i_transformed.shape[0]
 size_y = i_transformed.shape[1]
+
+#******************original img show
+
+# plt.grid(False)
+# plt.gray()
+# plt.axis('off')
+# plt.imshow(i)
+# plt.show()
+
+
 
 # This filter detects edges nicely
 # It creates a filter that only passes through sharp edges and straight lines. 
@@ -53,6 +58,8 @@ for x in range(1,size_x-1):
 
 
       # Plot the image. Note the size of the axes -- they are 512 by 512
+
+#******************filter img show
 plt.gray()
 plt.grid(False)
 plt.imshow(i_transformed)

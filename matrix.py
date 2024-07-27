@@ -13,7 +13,7 @@ size_y = i_transformed.shape[1]
 # Experiment with different values for fun effects.
 #filter = [ [0, 1, 0], [1, -4, 1], [0, 1, 0]] 
 # A couple more filters to try for fun!
-filter = [ [-1, -2, -1], [0, 0, 0], [1, 2, 1]]
+filter = [ [-1, -2, -1], [1, 1, 1], [1, 2, 1]]
 #filter = [ [-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]
  # If all the digits in the filter don't add up to 0 or 1, you 
 # should probably do a weight to get it to do so
@@ -41,3 +41,9 @@ for x in range(1,size_x-1):
       if(output_pixel>255):
         output_pixel=255
       i_transformed[x, y] = output_pixel
+
+plt.gray()
+plt.grid(False)
+plt.imshow(i_transformed)
+plt.axis('off')
+plt.show()  
