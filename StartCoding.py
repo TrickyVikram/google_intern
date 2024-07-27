@@ -50,3 +50,11 @@ for x in range(1,size_x-1):
       if(output_pixel>255):
         output_pixel=255
       i_transformed[x, y] = output_pixel
+
+
+      # Plot the image. Note the size of the axes -- they are 512 by 512
+plt.gray()
+plt.grid(False)
+plt.imshow(i_transformed)
+plt.axis('off')
+plt.show()   
