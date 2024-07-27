@@ -10,6 +10,7 @@ zip_ref.close()
 train_horse_dir = os.path.join('/tmp/horse-or-human/horses')
  
 # Directory with our training human pictures
+
 train_human_dir = os.path.join('/tmp/horse-or-human/humans')
 
 train_horse_names = os.listdir(train_horse_dir)
